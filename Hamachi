@@ -9,8 +9,9 @@
 StartService ()
 {
     ConsoleMessage "Starting Hamachi"
+    sleep 30s
     /usr/sbin/tuncfg
-    /usr/bin/hamachi start
+    /usr/bin/hamachi -c /Users/robertdobson/.hamachi start
 }
 
 StopService ()
