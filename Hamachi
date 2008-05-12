@@ -9,13 +9,14 @@
 StartService ()
 {
     ConsoleMessage "Starting Hamachi"
-	/usr/bin/hamachi start
+    /usr/sbin/tuncfg
+    /usr/bin/hamachi start
 }
 
 StopService ()
 {
     ConsoleMessage "Stopping Hamachi"
-	/usr/bin/hamachi stop
+    /usr/bin/hamachi stop
 }
 
 RestartService ()

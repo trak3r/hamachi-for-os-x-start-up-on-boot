@@ -2,7 +2,8 @@
     Description     = "Hamachi";
     Provides        = ("Hamachi");
     Requires        = ("Network");
-    OrderPreference = "Late";
+    Uses            = ("tun");
+    OrderPreference = "Last";
     Messages = {
         start = "Starting Hamachi";
         stop  = "Stopping Hamachi";
