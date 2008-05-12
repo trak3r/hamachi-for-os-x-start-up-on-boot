@@ -1,0 +1,10 @@
+{
+    Description     = "Hamachi";
+    Provides        = ("Hamachi");
+    Requires        = ("Network");
+    OrderPreference = "Late";
+    Messages = {
+        start = "Starting Hamachi";
+        stop  = "Stopping Hamachi";
+    };
+}

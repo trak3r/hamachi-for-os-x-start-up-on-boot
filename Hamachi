@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#
+# Hamachi
+#
+
+. /etc/rc.common
+
+StartService ()
+{
+    ConsoleMessage "Starting Hamachi"
+	/usr/bin/hamachi start
+}
+
+StopService ()
+{
+    ConsoleMessage "Stopping Hamachi"
+	/usr/bin/hamachi stop
+}
+
+RestartService ()
+{
+    StopService
+    StartService
+}
+
+if [ z"$#" == z"0" ] ; then
+    StartService
+else
+    case $1 in 
+        start  ) StartService   ;;
+        stop   ) StopService    ;;
+        restart) RestartService ;;
+        *      ) echo "/Library/StartupItems/Hamachi/Hamachi: unknown argument: ";;
+    esac
+fi
