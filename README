@@ -1,9 +1,11 @@
-1. Move this folder into /Library/StartupItems
+1. Change the "/robertdobson" path in the "Hamachi" script to your user account home directory.
 
-2. Open up a Terminal
+2. Move the whole folder into /Library/StartupItems
 
-3. "cd /Library/StartupItems/Hamachi"
+3. Open up a Terminal
 
-4. "chown root:wheel ."
+4. "cd /Library/StartupItems/Hamachi"
 
-5. "chown root:wheel *"
+5. "sudo chown root:wheel ."
+
+6. "sudo chown root:wheel *"
